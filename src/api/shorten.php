@@ -1,9 +1,5 @@
 <?php
 
-require_once "db.php";
-$db = new DataBase();
-// $db->test();
-
 function generate_name($n)
 {
   $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
