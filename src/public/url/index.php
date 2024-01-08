@@ -44,9 +44,11 @@ else {
         <p>Redirecting you in <span id="seconds"></span></p>
       </div>
     </div>
-    <p>Shorten your own URL's <a href="https://knipurl.nl" class="btn bg-primary text-white px-2 py-1 shadow rounded">here</a></p>
+    <div class="d-flex flex-column gap-2">
+      <p>Shorten your own URL's <a href="https://knipurl.nl" class="btn bg-primary text-white px-2 py-1 shadow rounded">here</a></p>
+      <a href="<?php echo $new_loc;?>" class="btn btn-success text-white">Continue</a>
+    </div>
   </div>
-  <script type="text/javascript"> var infolinks_pid = 3411827; var infolinks_wsid = 0; </script> <script type="text/javascript" src="//resources.infolinks.com/js/infolinks_main.js"></script>
   <script>
     let seconds = 3; const secondsSpan = document.querySelector("span#seconds"); secondsSpan.textContent = seconds.toString();
     const counter = setInterval(() => {if (seconds > 0)
