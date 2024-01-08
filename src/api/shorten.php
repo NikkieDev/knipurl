@@ -12,7 +12,7 @@ function generate_name($n)
   $new = substr($new, 0, -30);
 
   $new = file_exists("./data/$code.json") ? generate_name($new) : $new;
-  return $new_fucker;
+  return $new;
 }
 
 $data_stream = file_get_contents("php://input");
